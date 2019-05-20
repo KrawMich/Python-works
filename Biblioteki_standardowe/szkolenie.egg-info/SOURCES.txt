@@ -1,0 +1,10 @@
+setup.py
+mathematica/__init__.py
+mathematica/algebra/__init__.py
+mathematica/algebra/matrices.py
+mathematica/geometry/__init__.py
+mathematica/geometry/figures.py
+szkolenie.egg-info/PKG-INFO
+szkolenie.egg-info/SOURCES.txt
+szkolenie.egg-info/dependency_links.txt
+szkolenie.egg-info/top_level.txt

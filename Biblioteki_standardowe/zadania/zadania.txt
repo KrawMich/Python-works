@@ -1,0 +1,67 @@
+
+1 + 4 * 3 / 5 + 12 =
+1 4 3 * 5 / + 12 +
+
+Zadanie 1
+Zaimplementuj funkcję rpn realizującą obliczenia wyrażenia w odwrotnej notacji polskiej. Funkcja powinna przyjmować zmienną liczbę argumentów. Wraz z rozwiązaniem zaimplementuj także testy sprawdzające poprawność działania funkcji.
+
+Przykład użycia funkcji:
+
+>>> rpn(2, 3, '+', 5, '*')
+25
+Filmik: https://www.youtube.com/watch?v=7ha78yWRDlE
+
+Zadanie 2
+Zaimplementuj funkcję sort realizującą algorytm sortowania "quick sort". Funkcja powinna zwracać nową listę. Wraz z rozwiązaniem zaimplementuj także testy sprawdzające poprawność działania algorytmu.
+
+Przykład użycia funkcji:
+
+>>> sort([5, 1, 3, 2, 4])
+[1, 2, 3, 4, 5]
+
+Zadanie 3
+Stwórz grę "Wilk koza i kapusta"
+
+gra ma być obiektem
+cała logika gry ma być realizowana przez metody obiektu gra
+
+
+mamy dwa brzegi
+na początku gry wilk, koza i kapusta są na pierwszym brzegu
+za pomocą łódki można przewieźć jeden obiekt na przeciwny brzeg
+
+gra kończy się wygraną gdy wilk, koza i kapusta znajdą sie na drugim brzegu
+gra kończy się przegraną jeśli na dowolnym brzegu na raz znajdą się:
+    a) wilk i koza
+    b) koza i kapusta
+    a nie ma tam łódki
+
+gracz decyduje co zabiera na łódkę
+gracz może płynąć pustą łódką
+po dopłynięciu automatycznie wyładowujemy obiekt na brzeg
+
+stan gry to informacja gdzie są obiekty: wilk, koza, kapusta, łódka
+
+przykład użycia:
+
+>>> Menu:
+... stan [g]ry
+... [w]ilk na łódkę lub z łódki
+... [k]oza na łódkę lub z łódki
+... [s]ałata na łódkę lub z łódki
+... [l]ódka na przeciwny brzeg
+... [e]xit
+
+>>>g
+>>> pierwszy brzeg: [wilk, koza, sałata] + łódka
+... drugi brzeg: []
+... łódka: []
+
+>>>w
+wilk na łódce
+
+>>>l
+wilk na drugim brzegu
+
+przegrałeś: koza zjadła sałatę na pierwszym brzegu
+
